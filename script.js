@@ -17,3 +17,12 @@ function addTransaction() {
 
     input.value = "";
 }
+
+function addExpense() {
+    const amount = Number(document.getElementById("amount").value);
+    const category = document.getElementById("category").value;
+
+    if (amount > 0 && category) {
+        console.log("Expense Added:", amount, category);
+    }
+}
